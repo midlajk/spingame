@@ -10,10 +10,11 @@ function Welcome() {
 
 </div>
 <img src="/wheel.png" className="wheel" alt="" srcSet=""/> 
-<Link to='/result'>
-<img src="/spintowin.png" className="clicker" alt="" srcSet=""/> 
+<div className="flex-item">
+            <Link to='/result'>
+            <img src="/playnowbtn.png" className="playnow-btn clicker" alt="" srcSet="" />  
             </Link>
-
+            </div>
 <img src="/moviename.png" className="moviename" alt="" srcSet=""/> 
 
 </div>

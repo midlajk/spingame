@@ -1,0 +1,50 @@
+.main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.movieposter {
+    width: 100%;
+    border-radius: 30px;
+}
+
+h1 {
+    color: #fff;
+    align-self: center;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.add {
+    width: 95%;
+}
+
+.btn {
+    width: 80%;
+    height: 60px;
+    background-color: #009ac9;
+    border-style: none;
+    align-self: center;
+    color: #fff;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 16px;
+}
+
+.modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
