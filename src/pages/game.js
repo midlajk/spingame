@@ -1,6 +1,18 @@
 import './welcome.css'
+import {useState} from 'react';
+
 import {Link,useParams} from 'react-router-dom'
 function Welcome() {
+    const [clas, setIsActive] = useState('rotate');
+
+
+    function selose(){
+       
+        setIsActive('rotateb')
+
+    }
+   
+  
   return (
 <div className="app">
 <div className="middle">
@@ -9,11 +21,11 @@ function Welcome() {
 </p>
 
 </div>
-<img src="/wheel.png" className="wheel" alt="" srcSet=""/> 
+<img src="/wheel.png" className="rotate" alt="" srcSet=""/> 
 <div className="flex-item">
-            <Link to='/result'>
-            <img src="/playnowbtn.png" className="playnow-btn clicker" alt="" srcSet="" />  
-            </Link>
+            {/* <Link to='/result'> */}
+            <img src="/playnowbtn.png" onClick={selose} className="playnow-btn clicker" alt="" srcSet="" />  
+            {/* </Link> */}
             </div>
 <img src="/moviename.png" className="moviename" alt="" srcSet=""/> 
 

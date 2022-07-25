@@ -1,5 +1,16 @@
 import './login.css'
+import {Verifyotp} from '../api/apicall'
+
 function mobileenter(props) {
+
+    async function submitotp(){
+        var registration = await Verifyotp(props.mobile,props.otp)
+                if(registration.data.status=="matched"){
+                    props.successed()
+                }else{
+                    alert('Invalid OTP')
+                }
+    }
   return (
     <div className="login">
 <div className="navbar">
@@ -18,14 +29,14 @@ function mobileenter(props) {
  +91 {props.mobile} </p>
 
 </div>
-<div  div className="second-last">
+<div  className="second-last">
     <div className="otpdiv">
-    <input type="text" className="otpinput" maxLength="4"/>
+    <input type="text" className="otpinput" onInput={(value)=>{props.setotp(value.currentTarget.value)}} maxLength="4"/>
 
 
 
     </div>
-<button className="btn" onClick={props.successed}>
+<button className="btn" onClick={submitotp}>
 Submit OTP
 </button>
 </div>

@@ -1,77 +1,144 @@
-.app {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    width: 100%;
-}
-
-.icon {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.spinner-1 {
-    width: 30%;
-    align-self: center;
-    margin-bottom: -25px;
-}
-
-.flex-item {
-    margin: auto;
-}
-
-.spin-win {
-    width: 70%;
-    align-self: center;
-}
-
-.playnow-btn {
-    align-self: center;
-    width: 100%;
-}
-
-.text {
-    margin-left: 10%;
-    margin-top: 100px;
-}
-
-.input {
-    margin: 10%;
-    margin-top: 50%;
-    padding: 10px;
-    height: 40px;
-    font-size: 25px;
-    border-radius: 16px;
-    border-color: #000;
-    border-width: 2px;
-    margin-bottom: 0px;
-}
-
-.reqotp {
-    margin: 15px;
-    padding: 20px;
-    width: 80%;
-    align-self: center;
-    height: 70px;
-    font-size: 25px;
-    border-radius: 16px;
-    background-color: #F2994A;
-    border-color: #F2994A;
-    color: #fff;
-}
-
-.wheel {
-    width: 90%;
-    align-self: center;
-}
-
-.clicker {
-    align-self: center;
-    width: 40%;
-    margin-left: 30%;
-}
+    .app {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .icon {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .spinner-1 {
+        width: 30%;
+        align-self: center;
+        margin-bottom: -25px;
+    }
+    
+    .flex-item {
+        margin: auto;
+    }
+    
+    .spin-win {
+        width: 70%;
+        align-self: center;
+    }
+    
+    .playnow-btn {
+        align-self: center;
+        width: 100%;
+    }
+    
+    .text {
+        margin-left: 10%;
+        margin-top: 100px;
+    }
+    
+    .input {
+        margin: 10%;
+        margin-top: 50%;
+        padding: 10px;
+        height: 40px;
+        font-size: 25px;
+        border-radius: 16px;
+        border-color: #000;
+        border-width: 2px;
+        margin-bottom: 0px;
+    }
+    
+    .reqotp {
+        margin: 15px;
+        padding: 20px;
+        width: 80%;
+        align-self: center;
+        height: 70px;
+        font-size: 25px;
+        border-radius: 16px;
+        background-color: #F2994A;
+        border-color: #F2994A;
+        color: #fff;
+    }
+    
+    .clicker {
+        align-self: center;
+        width: 40%;
+        margin-left: 30%;
+    }
+    
+    .rotate {
+        width: 70%;
+        align-self: center;
+        animation: rotation 6 .2s linear, rotation 6 .3s linear, rotation 6 .4s linear, rotation 6 .5s linear, rotation 6 .6s linear, rotation 6 .7s linear, rotation 6 .8s linear, rotation 6 .9s linear, rotation 6 1s linear, rotation 2 2s linear, rotation 1 3s linear, rotationb 1 4s linear;
+        animation-delay: 0s, 1.2s, 3s, 5.4s, 8.4s, 12s, 16.2s, 21s, 26.4s, 30.4s, 34.4s, 37.4s;
+    }
+    
+    .second {
+        animation: rotation, rotation;
+        animation-duration: 2s, 2s;
+        animation-iteration-count: 10, 10;
+        -moz-animation-timing-function: linear;
+        animation-delay: 0s, 1.2s;
+    }
+    
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        /* }
+        20% {
+            transform: rotate(720deg);
+        }
+        30% {
+            transform: rotate(1080deg);
+        }
+        40% {
+            transform: rotate(1440deg);
+        }
+        50% {
+            transform: rotate(1800deg);
+        }
+        60% {
+            transform: rotate(2160deg);
+        }
+        70% {
+            transform: rotate(2520deg);
+        }
+        80% {
+            transform: rotate(2880deg);
+            animation-delay: 100s;
+        }
+        90% {
+            transform: rotate(3140deg);
+            animation-delay: 100s;
+        }
+        100% {
+            transform: rotate(3600deg);
+            animation-delay: 100s;
+        }
+        200% {
+            transform: rotate(3960deg);
+            opacity: 10;
+        } */
+    }
+    
+    .rotateb {
+        width: 70%;
+        align-self: center;
+        animation: rotationb 4 1s linear;
+        animation-play-state: inherit
+    }
+    
+    @keyframes rotationb {
+        to {
+            transform: rotate(60deg);
+        }
+    }
