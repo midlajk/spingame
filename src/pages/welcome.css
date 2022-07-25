@@ -9,6 +9,21 @@
         width: 100%;
     }
     
+    .spinwheelsec {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 600px;
+        width: 100%;
+    }
+    
+    .pointer {
+        width: 50px;
+        align-self: center;
+        margin-bottom: -250px;
+        z-index: 99;
+    }
+    
     .icon {
         display: flex;
         justify-content: space-around;

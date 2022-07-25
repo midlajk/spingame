@@ -21,10 +21,15 @@ function Welcome() {
 </p>
 
 </div>
-<img src="/wheel.png" className="rotate" alt="" srcSet=""/> 
+<div className="spinwheelsec">
+<img src="/pointer.png" className="pointer" /> 
+<img src="/spinwheel.png" className="rotate" alt="" srcSet=""/> 
+</div>
+
 <div className="flex-item">
             {/* <Link to='/result'> */}
-            <img src="/playnowbtn.png" onClick={selose} className="playnow-btn clicker" alt="" srcSet="" />  
+           
+            <img src="/spintowin.png" onClick={selose} className="playnow-btn clicker" alt="" srcSet="" />  
             {/* </Link> */}
             </div>
 <img src="/moviename.png" className="moviename" alt="" srcSet=""/> 
