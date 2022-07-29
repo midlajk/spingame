@@ -1,14 +1,19 @@
 import './welcome.css'
 import {useState} from 'react';
+import {prizecheck} from '../api/apicall'
 
 import {Link,useParams} from 'react-router-dom'
+function changevar(v) {
+    document.documentElement.style.setProperty('--change', 180+'deg');
+}
 function Welcome() {
-    const [clas, setIsActive] = useState('rotate');
+    const [clas, setIsActive] = useState('spin-win');
 
 
-    function selose(){
-       
-        setIsActive('rotateb')
+    async function selose(){
+        setIsActive('rotate')
+        var registration = await prizecheck()
+       changevar(360)
 
     }
    
@@ -22,8 +27,8 @@ function Welcome() {
 
 </div>
 <div className="spinwheelsec">
-<img src="/pointer.png" className="pointer" /> 
-<img src="/spinwheel.png" className="rotate" alt="" srcSet=""/> 
+<img src="/wheel-pointer.png" className="pointer" /> 
+<img src="/spinwheel.png" className={clas} alt="" srcSet=""/> 
 </div>
 
 <div className="flex-item">
@@ -32,7 +37,7 @@ function Welcome() {
             <img src="/spintowin.png" onClick={selose} className="playnow-btn clicker" alt="" srcSet="" />  
             {/* </Link> */}
             </div>
-<img src="/moviename.png" className="moviename" alt="" srcSet=""/> 
+<img src="/movienamegold.png" className="moviename" alt="" srcSet=""/> 
 
 </div>
   );

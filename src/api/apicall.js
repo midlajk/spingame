@@ -32,6 +32,22 @@ export async function Verifyotp(phone,otp){
     }
 }
 
+export async function prizecheck(phone,otp){
+  
+    try{
+        let res = await axios.post(c.Prizecheck, {
+            "phone": "9744061516",
+            "location": "location",
+
+            } );
+            
+         return res
+        
+    }catch (e) {
+        throw handler(e);
+    }
+}
+
 export function handler(err) {
     let error = err;
 

@@ -18,9 +18,9 @@ function Login() {
     setotprequested(true)
    }
    function successed () {
-   
     setVerifide(true)
     setotprequested(false)
+    
   }
    if(otprequested){
     return  <Otpenter mobile={mobile} setotp={setotp} otp={otp} successed={successed} />
