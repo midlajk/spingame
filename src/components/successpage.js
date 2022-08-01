@@ -34,7 +34,10 @@ I agree to the <a href="http://google.com" target="_blank" rel="noopener norefer
 
     </div>
     {props.checked &&
-    <button className="btn" >Continue</button>
+    <Link to='/game' className="btn">     <button className="btn"  >
+    Continue
+    </button> </Link>
+    
  }
    
 
