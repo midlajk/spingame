@@ -1,5 +1,5 @@
 :root {
-    --change: 0deg;
+    --change: 45deg;
 }
 
 .app {
@@ -13,6 +13,30 @@
     width: 100%;
 }
 
+.addpage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+}
+
+.adimage {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.skip {
+    width: 120px;
+    height: 70px;
+    border-radius: 10px;
+    align-self: center;
+}
+
 .spinwheelsec {
     display: flex;
     flex-direction: column;
@@ -22,7 +46,7 @@
 }
 
 .pointer {
-    width: 50px;
+    width: 60px;
     align-self: center;
     margin-bottom: -60px;
     z-index: 99;
@@ -113,41 +137,6 @@
     100% {
         transform: rotate(360deg);
     }
-    /* }
-        20% {
-            transform: rotate(720deg);
-        }
-        30% {
-            transform: rotate(1080deg);
-        }
-        40% {
-            transform: rotate(1440deg);
-        }
-        50% {
-            transform: rotate(1800deg);
-        }
-        60% {
-            transform: rotate(2160deg);
-        }
-        70% {
-            transform: rotate(2520deg);
-        }
-        80% {
-            transform: rotate(2880deg);
-            animation-delay: 100s;
-        }
-        90% {
-            transform: rotate(3140deg);
-            animation-delay: 100s;
-        }
-        100% {
-            transform: rotate(3600deg);
-            animation-delay: 100s;
-        }
-        200% {
-            transform: rotate(3960deg);
-            opacity: 10;
-        } */
 }
 
 .rotateb {
@@ -164,4 +153,23 @@
     to {
         transform: rotate(var(--change));
     }
+}
+
+.modal {
+    margin: 5%;
+    position: absolute;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    width: 90%;
+    z-index: 100;
+    border-radius: 16px;
+}
+
+h3,
+.colour {
+    color: #000;
+    align-self: center;
 }

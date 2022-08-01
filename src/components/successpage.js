@@ -1,8 +1,11 @@
 import './login.css'
+import { useNavigate } from "react-router-dom";
+import useAuth from "../constants/reacthook";
 
 import {Link,useParams} from 'react-router-dom'
 
-function mobileenter(props) {
+function Mobileenter(props) {
+  
 
   return (
     <div className="login">
@@ -30,9 +33,9 @@ I agree to the <a href="http://google.com" target="_blank" rel="noopener norefer
 
 
     </div>
-    {props.checked &&  <Link to='/game' className="btnlink">
-    <button className="btn">Continue</button>
-    </Link>}
+    {props.checked &&
+    <button className="btn" >Continue</button>
+ }
    
 
 </div>
@@ -42,4 +45,4 @@ I agree to the <a href="http://google.com" target="_blank" rel="noopener norefer
   );
 }
 
-export default mobileenter;
+export default Mobileenter;

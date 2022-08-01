@@ -5,7 +5,7 @@ function mobileenter(props) {
 
     async function submitotp(){
         var registration = await Verifyotp(props.mobile,props.otp)
-                if(registration.data.status=="matched"){
+                if(registration.data.status==="matched"){
                     props.successed()
                 }else{
                     alert('Invalid OTP')

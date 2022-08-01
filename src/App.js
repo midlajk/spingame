@@ -13,8 +13,20 @@ function App() {
      
   <Route exact path={"/welcome/:place"} element={<Welcome />} />
     <Route path='/login' element={<Login/>} /> 
-    <Route path='/game' element={<Game/>} /> 
-    <Route path='/result' element={<Result/>} /> 
+    <Route
+        path="/game"
+        element={
+            <Game />
+        }
+      />
+      <Route
+        path="/result"
+        element={
+            <Result />
+        }
+      />
+    {/* <Route path='/game' element={<Game/>} /> 
+    <Route path='/result' element={<Result/>} />  */}
 
     </Routes>
         </div>
