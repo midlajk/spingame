@@ -5,8 +5,10 @@ import useAuth from "../constants/reacthook";
 import {Link,useParams} from 'react-router-dom'
 
 function Mobileenter(props) {
-  
-
+   let navigation = useNavigate()
+   function cont() {
+    navigation("/game", { replace: true });
+                }
   return (
     <div className="login">
 <div className="navbar">
@@ -34,10 +36,7 @@ I agree to the <a href="http://google.com" target="_blank" rel="noopener norefer
 
     </div>
     {props.checked &&
-    <Link to='/game' className="btn">     <button className="btn"  >
-    Continue
-    </button> </Link>
-    
+    <button className="btn" onClick={cont}>Continue </button>
  }
    
 
